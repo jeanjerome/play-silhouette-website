@@ -1,10 +1,11 @@
 package controllers
 
-import com.mohiva.play.silhouette.api._
-import com.mohiva.play.silhouette.api.exceptions.ProviderException
-import com.mohiva.play.silhouette.impl.exceptions.IdentityNotFoundException
-import com.mohiva.play.silhouette.impl.providers._
+import io.github.honeycombcheesecake.play.silhouette.api._
+import io.github.honeycombcheesecake.play.silhouette.api.exceptions.ProviderException
+import io.github.honeycombcheesecake.play.silhouette.impl.exceptions.IdentityNotFoundException
+import io.github.honeycombcheesecake.play.silhouette.impl.providers._
 import forms.{ TotpForm, TotpSetupForm }
+import io.github.honeycombcheesecake.play.silhouette.impl.providers.GoogleTotpInfo
 
 import javax.inject.Inject
 import play.api.i18n.Messages

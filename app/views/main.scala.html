@@ -29,7 +29,7 @@
 					 @user.map { u =>
                                  <li><a href="@controllers.routes.SupportController.view" accesskey="3" title="">@messages("support")</a></li>
                                  <li><a href="@controllers.routes.DownloadController.view" accesskey="4" title="">@messages("download")</a></li>
-                                  @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
+                                  @if(u.loginInfo.providerID == io.github.honeycombcheesecake.play.silhouette.impl.providers.CredentialsProvider.ID) {
                                         <li> <a class="nav-item nav-link" href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a></li>
                                   }
                                  <li>  <a class="nav-item nav-link" href="@controllers.routes.ApplicationController.index">@u.name</a></li>
@@ -48,7 +48,7 @@
                     <li><a href="@controllers.routes.DownloadController.view" accesskey="4" title="">@messages("download")</a></li>
                     <li><a href="@controllers.routes.SupportController.view" accesskey="3" title="">@messages("support")</a></li>
 
-                    @if(u.loginInfo.providerID == com.mohiva.play.silhouette.impl.providers.CredentialsProvider.ID) {
+                    @if(u.loginInfo.providerID == io.github.honeycombcheesecake.play.silhouette.impl.providers.CredentialsProvider.ID) {
                     <li> <a class="nav-item nav-link" href="@controllers.routes.ChangePasswordController.view">@messages("change.password")</a></li>
                     }
 

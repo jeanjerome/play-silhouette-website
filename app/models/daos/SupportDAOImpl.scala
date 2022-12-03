@@ -2,7 +2,7 @@ package models.daos
 
 import java.util.UUID
 
-import com.mohiva.play.silhouette.api.LoginInfo
+import io.github.honeycombcheesecake.play.silhouette.api.LoginInfo
 import javax.inject.Inject
 import models.{ ContactTicket, SupportTicket }
 import play.api.db.Database

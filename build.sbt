@@ -8,13 +8,13 @@ name := "website"
 
 version := "9.0.1"
 
-val SilhouetteVersion = "7.0.2"
+val SilhouetteVersion = "8.0.2"
 
 val  PostgreSQLJDBCVersion = "42.3.1"
 
-val PlayVersion = "2.8.11"
+val PlayVersion = "2.8.18"
 
-scalaVersion := "2.13.7"
+scalaVersion := "2.13.10"
 
 resolvers += Resolver.jcenterRepo
 

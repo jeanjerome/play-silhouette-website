@@ -2,8 +2,8 @@ package controllers
 
 import java.util.UUID
 
-import com.mohiva.play.silhouette.api._
-import com.mohiva.play.silhouette.impl.providers.CredentialsProvider
+import io.github.honeycombcheesecake.play.silhouette.api._
+import io.github.honeycombcheesecake.play.silhouette.impl.providers.CredentialsProvider
 
 import forms.ContactForm
 import javax.inject.Inject

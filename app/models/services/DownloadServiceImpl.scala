@@ -1,7 +1,7 @@
 package models.services
 
-import com.mohiva.play.silhouette.api.LoginInfo
-import com.mohiva.play.silhouette.impl.providers.CredentialsProvider
+import io.github.honeycombcheesecake.play.silhouette.api.LoginInfo
+import io.github.honeycombcheesecake.play.silhouette.impl.providers.CredentialsProvider
 
 import java.io.PrintWriter
 import models.{ DownloadToken, InternalDownloadToken, User }

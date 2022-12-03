@@ -1,9 +1,9 @@
 package controllers
 
-import com.mohiva.play.silhouette.api.LogoutEvent
-import com.mohiva.play.silhouette.api.actions._
-import com.mohiva.play.silhouette.api.util.PasswordInfo
-import com.mohiva.play.silhouette.impl.providers.GoogleTotpInfo
+import io.github.honeycombcheesecake.play.silhouette.api.LogoutEvent
+import io.github.honeycombcheesecake.play.silhouette.api.actions._
+import io.github.honeycombcheesecake.play.silhouette.api.util.PasswordInfo
+import io.github.honeycombcheesecake.play.silhouette.impl.providers.GoogleTotpInfo
 import play.api.http.Writeable
 
 import javax.inject.Inject

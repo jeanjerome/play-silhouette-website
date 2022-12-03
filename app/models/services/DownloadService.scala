@@ -1,6 +1,6 @@
 package models.services
 
-import com.mohiva.play.silhouette.api.LoginInfo
+import io.github.honeycombcheesecake.play.silhouette.api.LoginInfo
 import models.{ DownloadToken, User }
 import play.api.libs.Files
 

@@ -2,10 +2,10 @@ package controllers
 
 import java.util.UUID
 
-import com.mohiva.play.silhouette.api.actions.SecuredRequest
-import com.mohiva.play.silhouette.api.exceptions.ProviderException
-import com.mohiva.play.silhouette.api.util.{ Credentials, PasswordInfo }
-import com.mohiva.play.silhouette.impl.providers.CredentialsProvider
+import io.github.honeycombcheesecake.play.silhouette.api.actions.SecuredRequest
+import io.github.honeycombcheesecake.play.silhouette.api.exceptions.ProviderException
+import io.github.honeycombcheesecake.play.silhouette.api.util.{ Credentials, PasswordInfo }
+import io.github.honeycombcheesecake.play.silhouette.impl.providers.CredentialsProvider
 import controllers.{ SilhouetteController, SilhouetteControllerComponents, routes }
 import forms.{ ChangePasswordForm, SupportForm }
 import javax.inject.Inject

@@ -3,9 +3,9 @@ package models.daos
 import java.sql.Timestamp
 import java.util.UUID
 
-import com.mohiva.play.silhouette.api.{ AuthInfo, LoginInfo }
-import com.mohiva.play.silhouette.api.util.PasswordInfo
-import com.mohiva.play.silhouette.persistence.daos.DelegableAuthInfoDAO
+import io.github.honeycombcheesecake.play.silhouette.api.{ AuthInfo, LoginInfo }
+import io.github.honeycombcheesecake.play.silhouette.api.util.PasswordInfo
+import io.github.honeycombcheesecake.play.silhouette.persistence.daos.DelegableAuthInfoDAO
 import javax.inject.Inject
 import models.AuthToken
 import org.joda.time.DateTime

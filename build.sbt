@@ -10,8 +10,6 @@ version := "9.0.1"
 
 val SilhouetteVersion = "8.0.2"
 
-val  PostgreSQLJDBCVersion = "42.3.1"
-
 val PlayVersion = "2.8.18"
 
 scalaVersion := "2.13.10"
@@ -25,19 +23,25 @@ resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 
 
 libraryDependencies ++= Seq(
-  jdbc,
-  "org.postgresql" % "postgresql" % PostgreSQLJDBCVersion,
-  "com.typesafe.slick" %% "slick-hikaricp" % SlickVersion,
+  "org.reactivemongo" %% "play2-reactivemongo" % "1.0.4-play28", // Enable reactive mongo for Play 2.8
+  "org.reactivemongo" %% "reactivemongo-akkastream" % "1.0.10", // ReactiveMongo now supports the streaming of documents. It processes the data without loading the entire documents into memory
+  "org.reactivemongo" %% "reactivemongo-akkastream" % "1.0.10",
+  "com.typesafe.play" %% "play-json-joda" % "2.9.3", // Provide JSON serialization for Joda-Time
+  "org.reactivemongo" %% "reactivemongo-play-json-compat" % "1.0.4-play28", // Provide JSON serialization for reactive mongo
+  "org.reactivemongo" %% "reactivemongo-play-json" % "0.20.13-play28",
+  "org.reactivemongo" %% "reactivemongo-bson-compat" % "0.20.13", // Provide BSON serialization for reactive mongo
+  "org.reactivemongo" %% "reactivemongo-bson-macros" % "0.20.13",
+  "org.reactivemongo" %% "reactivemongo-bson" % "0.20.13",
   "io.github.honeycomb-cheesecake" %% "play-silhouette" % SilhouetteVersion,
   "io.github.honeycomb-cheesecake" %% "play-silhouette-password-bcrypt" % SilhouetteVersion,
   "io.github.honeycomb-cheesecake" %%  "play-silhouette-persistence" % SilhouetteVersion,
   "io.github.honeycomb-cheesecake" %%  "play-silhouette-crypto-jca" % SilhouetteVersion,
   "io.github.honeycomb-cheesecake" %%  "play-silhouette-totp" % SilhouetteVersion,
-  "org.webjars" %% "webjars-play" % "2.8.8-1",
-  "org.webjars" % "bootstrap" % "5.1.3" exclude("org.webjars", "jquery"),
-  "org.webjars" % "jquery" % "3.6.0",
-  "net.codingwell" %% "scala-guice" % "5.0.2",
-  "com.iheart" %% "ficus" % "1.5.1",
+  "org.webjars" %% "webjars-play" % "2.8.18",
+  "org.webjars" % "bootstrap" % "5.2.3" exclude("org.webjars", "jquery"),
+  "org.webjars" % "jquery" % "3.6.1",
+  "net.codingwell" %% "scala-guice" % "5.1.0",
+  "com.iheart" %% "ficus" % "1.5.2",
   "com.typesafe.play" %% "play-mailer" % "8.0.1",
   "com.typesafe.play" %% "play-mailer-guice" % "8.0.1",
   "com.enragedginger" %% "akka-quartz-scheduler" % "1.9.2-akka-2.6.x",
@@ -46,7 +50,6 @@ libraryDependencies ++= Seq(
   specs2 % Test,
   ehcache,
   guice,
-  jdbc,
   filters
 )
 
